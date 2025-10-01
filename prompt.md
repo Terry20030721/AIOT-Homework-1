@@ -52,3 +52,55 @@
 ```bash
 streamlit run app.py
 ```
+
+---
+
+### 開發與提交流程摘要
+
+這部分記錄了我們成功完成專案開發與提交到 GitHub 的主要步驟。
+
+**1. 專案初始化**
+- **使用者**: 要求建立 `prompt.md` 以記錄對話。
+- **Gemini**: 建立 `prompt.md`。
+
+**2. 產生 AI Prompt**
+- **使用者**: 提供互動式線性迴歸視覺化工具的專案計畫。
+- **Gemini**: 根據計畫，產生一份詳細的 AI prompt 並寫入 `prompt.md`。
+
+**3. 產生應用程式碼**
+- **使用者**: 要求根據 prompt 建立 `app.py`。
+- **Gemini**: 產生完整的 Streamlit 應用程式碼並存於 `app.py`。
+
+**4. 更新文件**
+- **使用者**: 要求將執行指令加入 `prompt.md`。
+- **Gemini**: 將 `streamlit run app.py` 指令區塊更新至 `prompt.md`。
+
+**5. 提交至 GitHub**
+- **使用者**: 要求將專案上傳到 GitHub。
+- **Gemini**: 執行以下成功的 Git 操作流程：
+    1. `git add app.py prompt.md README.md`
+    2. `git commit -m "feat: Initial commit for Streamlit linear regression app"`
+    3. `git push origin main --force` (使用 force push 解決歷史不一致問題)
+
+**6. 部署至 Streamlit Cloud**
+- **使用者**: 提出要將應用部署到 Streamlit Community Cloud。
+- **Gemini**: 
+    1. 解釋需要 `requirements.txt` 檔案。
+    2. 建立 `requirements.txt` 並加入相依套件。
+    3. 將新檔案 commit 並 push 到 GitHub。
+    4. 提供在 Streamlit Cloud 網站上進行部署的步驟指南。
+
+**7. 建立 README 文件**
+- **使用者**: 在部署後，要求建立一份專業的 `README.md` 文件。
+- **Gemini**: 
+    1. 向使用者詢問 Streamlit 應用的公開 URL。
+    2. 根據使用者提供的 URL，撰寫一份包含專案介紹、功能、本地端執行方法等內容的 `README.md`。
+    3. 將 `README.md` commit 並 push 到 GitHub。
+
+**8. 更新 README 文件**
+- **使用者**: 要求加入專案實作細節，並刪除截圖區塊。
+- **Gemini**: 
+    1. 分析使用者提供的文字與專案實際作法的差異。
+    2. 撰寫了更貼近專案實際情況的「核心實作流程」章節。
+    3. 刪除了預覽截圖區塊。
+    4. 將更新後的 `README.md` commit 並 push 到 GitHub。
